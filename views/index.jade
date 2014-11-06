@@ -1,0 +1,26 @@
+extend layout
+
+block content  
+  div.notecards-wrapper
+    div.alert-block.alert-info.alert
+      | click on a card to edit it
+    ul.notecards
+      li
+        div.row
+          div.col-md-2.trigger(contenteditable="true", id="new-trigger")
+            | Trigger
+          div.col-md-10.response(contenteditable="true", id="new-response", keyDown="responseKeyDown")
+            | Response
+    div.add-card.text-center.text-muted
+      div.fa.fa-plus.fa-3x
+      div 
+        | Add Card
+  div.review-wrapper
+    ul.reviewcards
+      li
+        div.review-trigger
+          | Loading cards...
+        div.review-response
+          | card response
+
+

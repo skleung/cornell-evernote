@@ -1,0 +1,130 @@
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+.animated {
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -o-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #e4e4e4;
+  height: 100%;
+  margin: 0;
+}
+.text-primary {
+  color: #009e60;
+}
+.btn-primary {
+  background-color: #009e60;
+  border: #006b41;
+}
+.btn-primary:hover {
+  background-color: #00ad69;
+}
+header {
+  padding: 10px 0;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+  background-color: #666666;
+}
+.notecards-wrapper,
+.review-wrapper {
+  width: 75%;
+  margin: 4% auto;
+  max-height: 450px;
+  overflow-y: scroll;
+}
+ul.notecards,
+ul.reviewcards {
+  list-style-type: none;
+  padding: 0;
+}
+ul.notecards li,
+ul.reviewcards li {
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 30px;
+  margin: 15px 0;
+  height: 300px;
+}
+ul.notecards li {
+  border-radius: 7px;
+  text-align: left;
+  height: auto;
+}
+.review-wrapper,
+.review-response {
+  display: none;
+}
+div.add-card {
+  width: 115px;
+  padding: 15px;
+  margin: auto;
+  background-color: inherit;
+  color: #666666;
+  border-radius: 10px;
+  border: 2px dotted #666666;
+}
+div.add-card:hover {
+  background-color: #cccccc;
+  cursor: pointer;
+}
+.trigger,
+.response {
+  border: 0;
+  outline: 0;
+}
+.response {
+  border-left: 1px solid #ccc;
+}

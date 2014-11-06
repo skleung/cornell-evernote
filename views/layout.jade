@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title Cornell Evernote
+
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='font-awesome-4.1.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/css/styles.css')
+  body
+    header
+      div.container
+        | Cornell 
+        span.text-primary
+          | Evernote
+
+        div.pull-right.btn.btn-primary(id="switch-view-btn")
+          | Review
+
+    block content
+    script(src="/js/jquery.min.js")
+    script(src="/js/bootstrap.min.js")
+    script(src="/js/script.js")

@@ -1,0 +1,80 @@
+@import "variables.less";
+@import "mixins.less";
+
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  background-color: @light;
+  height: 100%;
+  margin: 0;
+}
+
+.text-primary {
+  color: @primary;
+}
+.btn-primary {
+  background-color: @primary;
+  border: darken(@primary, 10%);
+}
+.btn-primary:hover {
+  background-color: lighten(@primary, 3%);
+}
+header {
+  padding: 10px 0;
+  color: @white;
+  font-weight: 700;
+  font-size: 24px;
+  background-color: @gray;
+}
+
+.notecards-wrapper, .review-wrapper {
+  width: 75%;
+  margin: 4% auto;
+  max-height: 450px;
+  overflow-y: scroll;
+}
+
+ul.notecards, ul.reviewcards {
+  list-style-type: none;
+  padding: 0;
+  li {
+    text-align: center;
+    background-color: @white;
+    border: 1px solid @gray-lighter;
+    padding: 30px;
+    margin: 15px 0;
+    height: 300px;
+  }
+}
+ul.notecards {
+  li {
+    border-radius: 7px;
+    text-align: left;
+    height: auto;
+  }
+}
+.review-wrapper, .review-response {
+  display: none;
+}
+
+div.add-card {
+  width: 115px;
+  padding: 15px;
+  margin: auto;
+  background-color: inherit;
+  color: @gray;
+  border-radius: 10px;
+  border: 2px dotted @gray;
+}
+div.add-card:hover {
+  background-color: @gray-lighter;
+  cursor: pointer;
+}
+
+.trigger, .response {
+  border: 0;
+  outline: 0;
+}
+
+.response {
+  border-left: 1px solid #ccc;
+}
